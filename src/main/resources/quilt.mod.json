@@ -1,0 +1,35 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "me.tibinonest",
+		"id": "limitless_options",
+		"version": "${version}",
+		"metadata": {
+			"name": "Limitless Options",
+			"description": "Remove the options limit that Mojang added in 1.19",
+			"contributors": {
+				"TibiNonEst": "Author"
+			},
+			"contact": {
+				"issues": "https://github.com/TibiNonEst/limitless-options/issues",
+				"sources": "https://github.com/TibiNonEst/limitless-options"
+			},
+			"icon": "assets/limitless_options/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19"
+			}
+		]
+	},
+	"minecraft": {
+		"environment": "client"
+	},
+	"mixin": "limitless_options.mixins.json"
+}
